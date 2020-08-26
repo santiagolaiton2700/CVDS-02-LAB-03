@@ -1,0 +1,24 @@
+package edu.eci.cvds.tdd.registry;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class RegistryTest {
+
+    private Registry registry = new Registry();
+
+    @Test
+    public void validateIsDead() {
+    	Person dead=new Person("chester",11111111,12,Gender.FEMALE,false);
+    	Assert.assertEquals(RegisterResult.DEAD,registry.registerVoter(dead));
+    }
+    @Test
+    public void ValidateUnderage() {
+    	Person dead=new Person("Santiago",1001169364,20,Gender.MALE,false);
+    	Assert.assertEquals(RegisterResult.UNDERAGE,registry.registerVoter(dead));
+    }
+    
+    
+    
+
+}

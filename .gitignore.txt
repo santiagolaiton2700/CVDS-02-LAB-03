@@ -3,7 +3,3 @@
 
 target/
 *.class
-
-.setting/ 
-
-.metadata/
