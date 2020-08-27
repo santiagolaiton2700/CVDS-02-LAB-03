@@ -1,4 +1,4 @@
-.metadata
+.metadata/
 bin/
 tmp/
 *.tmp
@@ -9,3 +9,6 @@ local.properties
 .settings/
 .loadpath
 .recommenders
+target/
+.classpath
+.project
