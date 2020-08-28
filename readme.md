@@ -77,7 +77,36 @@ Piense en los casos de equivalencia que se pueden generar del ejercicio para la 
 >
 ## Ejercicio "Descuento de tarifas"
 > ### Realizar diseño de pruebas
+
+_Documento adjunto_ ```documento```
+
+>
+
 > ### Implementación de las pruebas 
+* Descargamos el archivo ```aerodescuentos.jar``` y adicionamos una nueva dependencia en el archivo ```pom.xml```
+```
+<dependency>
+      <groupId>edu.eci.cvds</groupId>
+      <artifactId>aerodescuentos</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    
+```
+* Adicionamos una librería personalizada al repositorio local de maven con el comando:
+
+```
+$ mvn install:install-file -Dfile=aerodescuentos-1.0.0.jar -DgroupId=edu.eci.cvds -DartifactId=aerodescuentos -Dversion=1.0.0 -Dpackaging=jar
+```
+
+<img width="711" alt="8" src="https://user-images.githubusercontent.com/59893804/91619729-88820080-e953-11ea-880f-0180540ffb38.png">
+
+Cree el archivo ```TarifasTest.java``` en el directorio ```src/test/java/edu/eci/cvds/tdd/aerodescuentos```
+
+<img width="758" alt="9" src="https://user-images.githubusercontent.com/59893804/91619931-270e6180-e954-11ea-81e1-226ae27948cd.png">
+
+* Ejecutamos el comando de Maven para las fases de compilación y pruebas. Verificamos el resultado exitoso de todas las pruebas.
+>
+
 
 
 
