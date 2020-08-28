@@ -68,8 +68,11 @@ _ La diferencia entre ```$mvn package``` y ``` $mvn test``` es que con ```$mvn p
 
 >
 > ### Finalizar el ejercicio
+Piense en los casos de equivalencia que se pueden generar del ejercicio para la registraduría, dadas las condiciones y termine la implementación de las clases ``` Registry.java``` y ``` RegistryTest.java```
 
+<img width="512" alt="7" src="https://user-images.githubusercontent.com/59893804/91618767-e5c88280-e950-11ea-876f-740b8e7a6009.png">
 
+>
 ## Ejercicio "Descuento de tarifas"
 > ### Realizar diseño de pruebas
 > ### Implementación de las pruebas 
