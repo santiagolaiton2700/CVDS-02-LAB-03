@@ -78,7 +78,7 @@ Piense en los casos de equivalencia que se pueden generar del ejercicio para la 
 ## Ejercicio "Descuento de tarifas"
 > ### Realizar diseño de pruebas
 
-_Documento adjunto_ ```documento```
+_El diseño de las pruebas se encuentra en el documento adjunto llamado:_ ```documento```
 
 >
 
@@ -100,7 +100,7 @@ $ mvn install:install-file -Dfile=aerodescuentos-1.0.0.jar -DgroupId=edu.eci.cvd
 
 <img width="711" alt="8" src="https://user-images.githubusercontent.com/59893804/91619729-88820080-e953-11ea-880f-0180540ffb38.png">
 
-Cree el archivo ```TarifasTest.java``` en el directorio ```src/test/java/edu/eci/cvds/tdd/aerodescuentos```
+* Cree el archivo ```TarifasTest.java``` en el directorio ```src/test/java/edu/eci/cvds/tdd/aerodescuentos```
 
 <img width="758" alt="9" src="https://user-images.githubusercontent.com/59893804/91619931-270e6180-e954-11ea-81e1-226ae27948cd.png">
 
