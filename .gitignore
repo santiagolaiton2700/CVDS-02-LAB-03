@@ -1,4 +1,4 @@
-/target/
+
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
@@ -23,9 +23,10 @@ tmp/
 *.swp
 *~.nib
 local.properties
-.settings/
+settings/
 .loadpath
 .recommenders
+*.project
 
 # External tool builders
 .externalToolBuilders/
