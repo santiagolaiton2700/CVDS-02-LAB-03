@@ -34,12 +34,11 @@ Cambiamos la versión del compilador agregando la sección ```properties```
 
 Compilamos el proyecto
 
-<img width="421" alt="2" src="https://user-images.githubusercontent.com/59893804/91616375-2de4a680-e94b-11ea-9356-8cc589355ff9.png">
+<img width="416" alt="2" src="https://user-images.githubusercontent.com/59893804/91617554-e6134e80-e94d-11ea-863e-c3d26a7cfb82.png">
 
 Ejecutamos las pruebas 
 
-<img width="420" alt="3" src="https://user-images.githubusercontent.com/59893804/91616384-30df9700-e94b-11ea-8fd0-3b993d252f67.png">
-
+<img width="419" alt="3" src="https://user-images.githubusercontent.com/59893804/91617558-e7dd1200-e94d-11ea-8b3b-233d91e60e35.png">
 
 >
 ## Ejercicio "Registraduría"
@@ -57,7 +56,19 @@ Creamos las clases necesarias en el paquete ``` edu.eci.cvds.tdd.registry ```
 >
 
 > ### Ejecutar las pruebas
+
+Utilizando ```$mvn package```
+
+<img width="416" alt="5" src="https://user-images.githubusercontent.com/59893804/91617743-4609f500-e94e-11ea-908f-fc6454652c1d.png">
+
+Utilizando ``` $mvn test```
+
+<img width="419" alt="6" src="https://user-images.githubusercontent.com/59893804/91617702-2ffc3480-e94e-11ea-9839-c8a7ec13c3c0.png">
+_ La diferencia entre ```$mvn package``` y ``` $mvn test``` es que con ```$mvn package``` empaqueta todo el proyecto y ``` $mvn test``` compila y ejecuta las pruebas.
+
+>
 > ### Finalizar el ejercicio
+
 
 ## Ejercicio "Descuento de tarifas"
 > ### Realizar diseño de pruebas
