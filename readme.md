@@ -64,9 +64,10 @@ Utilizando ```$mvn package```
 Utilizando ``` $mvn test```
 
 <img width="419" alt="6" src="https://user-images.githubusercontent.com/59893804/91617702-2ffc3480-e94e-11ea-9839-c8a7ec13c3c0.png">
-_La diferencia entre ```$mvn package``` y ``` $mvn test``` es que ```$mvn package``` empaqueta todo el proyecto y lo ejecuta mientras que  ``` $mvn test``` solo compila y ejecuta las pruebas._
+_La diferencia entre_ ```$mvn package``` _y_ ``` $mvn test``` _es que_ ```$mvn package``` _empaqueta todo el proyecto y lo ejecuta mientras que_  ``` $mvn test``` _solo compila y ejecuta las pruebas._
 
 >
+
 > ### Finalizar el ejercicio
 Piense en los casos de equivalencia que se pueden generar del ejercicio para la registraduría, dadas las condiciones y termine la implementación de las clases ``` Registry.java``` y ``` RegistryTest.java```
 
