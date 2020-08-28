@@ -15,21 +15,21 @@ target/
 
 ### Eclipse ###
 
-.metadata
-bin/
-tmp/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-settings/
-.loadpath
-.recommenders
-*.project
+###.metadata##
+##bin/##
+##tmp/##
+##*.tmp##
+##*.bak##
+##*.sw##
+##*~.nib##
+##local.properties##
+##settings/##
+##.loadpath##
+##.recommenders##
+##*.project##
 
 # External tool builders
-.externalToolBuilders/
+##.externalToolBuilders/##
 
 # Locally stored "Eclipse launch configurations"
 *.launch
@@ -74,7 +74,7 @@ settings/
 
 ### Eclipse Patch ###
 # Eclipse Core
-.project
+##.project##
 
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
