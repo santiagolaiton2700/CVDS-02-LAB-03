@@ -43,8 +43,19 @@ Ejecutamos las pruebas
 
 >
 ## Ejercicio "Registraduría"
+
 > ### Propiedades
+* Solo se registrarán votantes válidos
+* Solo se permite una inscripción por número de documento
+>
 > ### Hacer el esqueleto de la aplicación
+
+Creamos las clases necesarias en el paquete ``` edu.eci.cvds.tdd.registry ``` 
+
+<img width="726" alt="4" src="https://user-images.githubusercontent.com/59893804/91616935-6e90ef80-e94c-11ea-946a-0291869bd367.png">
+
+>
+
 > ### Ejecutar las pruebas
 > ### Finalizar el ejercicio
 
