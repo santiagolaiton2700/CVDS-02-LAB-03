@@ -105,6 +105,9 @@ $ mvn install:install-file -Dfile=aerodescuentos-1.0.0.jar -DgroupId=edu.eci.cvd
 <img width="758" alt="9" src="https://user-images.githubusercontent.com/59893804/91619931-270e6180-e954-11ea-81e1-226ae27948cd.png">
 
 * Ejecutamos el comando de Maven para las fases de compilación y pruebas. Verificamos el resultado exitoso de todas las pruebas.
+
+<img width="790" alt="10" src="https://user-images.githubusercontent.com/59893804/91628803-11675f00-e989-11ea-9bc4-3f1801bb6856.png">
+
 >
 
 
