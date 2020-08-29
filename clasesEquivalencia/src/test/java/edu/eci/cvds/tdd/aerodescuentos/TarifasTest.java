@@ -14,80 +14,72 @@ public class TarifasTest {
     @param edad - edad del pasajero
     @throws ExcepcionParametrosInvalidos [XXXXXXXXXXXXXXXXXXXXXXXXXXX]
     **/
-    
+    /**
+     * Aplica descuento 
+     **/
     @Test
-    public void deberiaSerValidoEdadMayorMenorEdad() {
-        Assert.assertEquals(1000.0, (cal.calculoTarifa(1000,0,19)),0.0);
-    }
-    @Test
-    public void deberiaSerValidoEdadMayorLimite() {
-        Assert.assertEquals(920.0, (cal.calculoTarifa(1000,0,165)),0.0);
+    public void deberiaSerValidoEdadMenorEdad() {
+        Assert.assertEquals(475000.0, (cal.calculoTarifa(500000,10,6)),0.0);
     }
     @Test
     public void deberiaSerValidoEdadMayor() {
-        Assert.assertEquals(1000.0, (cal.calculoTarifa(1000,0,65)),0.0);
+        Assert.assertEquals(460000.0, (cal.calculoTarifa(500000,10,70)),0.0);
+    }
+    @Test
+    public void deberiaSerValidoEdadValidaSinDescuento() {
+        Assert.assertEquals(500000.0, (cal.calculoTarifa(500000,10,25)),0.0);
     }
     
     /**
-     * No hay edad negativa. Deberia arrojar Execption
+     * Edad negativa deberia arrojar Execption
      **/
     @Test
-    public void deberiaSerMenorValidoSingle() {
-        Assert.assertNotEquals(1000.0, (cal.calculoTarifa(1000,0,-18)),0.0);
+    public void deberiaSerEdadPositiva() {
+        Assert.assertNotEquals(1000.0, (cal.calculoTarifa(1000,10,-18)),0.0);
     }
-    
-    @Test
-    public void deberiaSerMenorValido() {
-        Assert.assertEquals(950.0, (cal.calculoTarifa(1000,0,17)),0.0);
-    }
-    @Test
-    public void deberiaSerMayorValido() {
-        Assert.assertEquals(1000.0, (cal.calculoTarifa(1000,0,19)),0.0);
-    }
-    @Test
-    public void deberiaSerEdadValido() {
-        Assert.assertEquals(1000.0, (cal.calculoTarifa(1000,0,18)),0.0);
-    }
-    @Test
-    public void deberiaSerMenosDias() {
-        Assert.assertEquals(950.0, (cal.calculoTarifa(1000,5,0)),0.0);
-    }
-    @Test
-    public void deberiaSerMasDias() {
-        Assert.assertEquals(800.0, (cal.calculoTarifa(1000,21,0)),0.0);
-    }
-    @Test
-    public void deberiaSerEdadMayor65() {
-        Assert.assertEquals(920.0, (cal.calculoTarifa(1000,12,66)),0.0);
-    }
-    @Test
-    public void deberiaSerEdad65() {
-        Assert.assertEquals(1000.0, (cal.calculoTarifa(1000,12,65)),0.0);
-    }
-    @Test
-    public void deberiaSerDiferenteDias20() {
-        Assert.assertNotEquals(920.0, (cal.calculoTarifa(1000,20,66)),0.0);
-    }
-    @Test
-    public void deberiaServalidodiasantelacionyedadmenor() {
-        Assert.assertEquals(770.0, (cal.calculoTarifa(1000,22,67)),0.0);
-    }
-    
     /**
-    Nos damos cuenta que existe un error en la libreria, debido a que cuando los dias de Antelacion es 20
-    no toma ningun caso referente a la edad
-    **/
+     * Edad mayor a 150 deberia arrojar Execption
+     **/
     @Test
-    public void deberiaSerDiferenteDias20ymenor() {
-        Assert.assertNotEquals(950.0, (cal.calculoTarifa(1000,20,16)),0.0);
+    public void deberiaSerEdadMenor150() {
+        Assert.assertEquals(1000.0, (cal.calculoTarifa(1000,10,180)),0.0);
+    }
+	
+    /**
+     * Los días de antelacion no deben ser negativos deberia arrojar Execption
+     **/
+    @Test
+    public void deberiaSerDiasValidos() {
+        Assert.assertEquals(1000.0, (cal.calculoTarifa(1000,-4,25)),0.0);
+    }
+	/**
+     * Los días de antelacion no alcanzan para descuento
+     **/
+    @Test
+    public void deberiaTenerMasDias() {
+        Assert.assertEquals(1000.0, (cal.calculoTarifa(1000,10,25)),0.0);
+    }
+	/**
+     * Los días de antelacion aplican para descuento
+     **/
+    @Test
+    public void deberiaTenerDescuentoDias() {
+        Assert.assertEquals(425000.0, (cal.calculoTarifa(500000,30,25)),0.0);
+    }
+
+	/**
+     * La tarifa es 0 deberia mandar Exception
+     **/
+    @Test
+    public void deberiaSerMayor0() {
+        Assert.assertNotEquals(1000.0, (cal.calculoTarifa(1000,10,25)),0.0);
+    }
+	/**
+     * La tarifa no tiene descuento
+     **/
+    @Test
+    public void deberiaNoTenerDescuento() {
+        Assert.assertEquals(1000.0, (cal.calculoTarifa(1000,10,25)),0.0);
     }
     
-    @Test
-    public void deberiaSerDiasMayor20() {
-        Assert.assertEquals(850.0, (cal.calculoTarifa(1000,22,19)),0.0);
-    }
-    @Test
-    public void deberiaSerinvalido() {
-        Assert.assertNotEquals(0.0, (cal.calculoTarifa(1000,22,-1)),0.0);
-    }
-}
+    
