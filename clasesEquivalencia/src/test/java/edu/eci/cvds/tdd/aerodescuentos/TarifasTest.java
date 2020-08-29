@@ -81,5 +81,5 @@ public class TarifasTest {
     public void deberiaNoTenerDescuento() {
         Assert.assertEquals(1000.0, (cal.calculoTarifa(1000,10,25)),0.0);
     }
-    
+}    
     
