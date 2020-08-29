@@ -37,13 +37,7 @@ public class TarifasTest {
     public void deberiaSerEdadPositiva() {
         Assert.assertNotEquals(1000.0, (cal.calculoTarifa(1000,10,-18)),0.0);
     }
-    /**
-     * Edad mayor a 150 deberia arrojar Execption
-     **/
-    @Test
-    public void deberiaSerEdadMenor150() {
-        Assert.assertEquals(1000.0, (cal.calculoTarifa(1000,10,180)),0.0);
-    }
+    
 	
     /**
      * Los días de antelacion no deben ser negativos deberia arrojar Execption
@@ -67,13 +61,7 @@ public class TarifasTest {
         Assert.assertEquals(425000.0, (cal.calculoTarifa(500000,30,25)),0.0);
     }
 
-	/**
-     * La tarifa es 0 deberia mandar Exception
-     **/
-    @Test
-    public void deberiaSerMayor0() {
-        Assert.assertNotEquals(1000.0, (cal.calculoTarifa(1000,10,25)),0.0);
-    }
+	
 	/**
      * La tarifa no tiene descuento
      **/
